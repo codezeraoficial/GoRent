@@ -16,8 +16,8 @@ export class VehicleController {
 
     const vehicle = await Vehicle.findById({ _id: vehicleId });
 
-    if (!vehicle)
-      return res.status(204).json({ error: "Vehicle was not found." });
+    if (vehicle === null)
+      return res.status(400).json({ error: "Vehicle was not found." });
 
     return res.status(200).json(vehicle);
   }
