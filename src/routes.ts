@@ -1,20 +1,18 @@
-import { Request, Response } from "express";
 import { VehicleController } from "./app/controllers/VehiclesControllers";
 
 export class Routes {
-
- public vehicleController: VehicleController = new VehicleController();
+  public vehicleController: VehicleController = new VehicleController();
 
   public routes(app): void {
     app
-    .route("/vehicles")
-    .post(this.vehicleController.store)
+      .route("/vehicles")
+      .get(this.vehicleController.index)
+      .post(this.vehicleController.store);
 
-    // app
-    // .route("/users/:id")
-    // .get(this.userController.show)
-    // .put(this.userController.update)
-    // .delete(this.userController.delete);
-    
+    app
+      .route("/vehicles/:_id")
+      .get(this.vehicleController.show)
+      .put(this.vehicleController.update)
+      .delete(this.vehicleController.destroy);
   }
 }
