@@ -9,7 +9,7 @@ const VehicleSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  renoved: {
+  renavam: {
     type: String,
     required: true
   },

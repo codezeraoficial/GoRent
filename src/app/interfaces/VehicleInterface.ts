@@ -1,6 +1,7 @@
-export interface VehicleInterface{ licensePalte: String,
+export interface VehicleInterface{
+  error: string;
   chassis: String,
-  renoved: String,
+  renavam: String,
   model: String,
   brand: String,
   year: String,

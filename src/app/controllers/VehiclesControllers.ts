@@ -31,6 +31,9 @@ export class VehicleController {
     const chassisExists = await Vehicle.findOne({
       chassis: params.chassis,
     });
+    const renavamExists = await Vehicle.findOne({
+      renavam: params.renavam,
+    });
 
     if (plateExists) {
       return res
@@ -41,6 +44,11 @@ export class VehicleController {
       return res
         .status(400)
         .json({ error: "Vehicle with this chassis already exists." });
+    }
+    if (renavamExists) {
+      return res
+        .status(400)
+        .json({ error: "Vehicle with this renavam already exists." });
     }
 
     Vehicle.create(params)
