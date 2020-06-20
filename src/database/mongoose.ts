@@ -1,7 +1,9 @@
 import * as mongoose from "mongoose";
 import { Mockgoose } from "mockgoose";
 
-const DB_URI = process.env.MONGO_URL;  
+import mongoconnect from '../config/config';
+
+const DB_URI = mongoconnect.mongoconnect;  
 
 export function connect() {
   return new Promise((resolve, reject) => {
