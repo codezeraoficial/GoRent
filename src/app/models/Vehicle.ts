@@ -1,12 +1,32 @@
 import * as mongoose from 'mongoose';
 
 const VehicleSchema = new mongoose.Schema({
-  licensePalte: String,
-  chassis: String,
-  renoved: String,
-  model: String,
-  brand: String,
-  year: String,  
+  licensePlate: {
+    type: String,
+    required: true
+  },
+  chassis: {
+    type: String,
+    required: true
+  },
+  renoved: {
+    type: String,
+    required: true
+  },
+  model: {
+    type: String,
+    required: true
+  },
+  brand: {
+    type: String,
+    required: true
+  },
+  year: {
+    type: String,
+    required: true
+  }, 
+},{
+  timestamps: true
 })
 
 export default mongoose.model('Vehicle', VehicleSchema);

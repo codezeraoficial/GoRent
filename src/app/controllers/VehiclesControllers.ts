@@ -12,7 +12,26 @@ export class VehicleController {
   public async store(req: Request, res: Response) {
     const params: VehicleInterface = req.body;
 
-    return res.json({ message: "Hello World" });
+    const plateExists = await Vehicle.findOne({
+      licensePlate: params.licensePlate,
+    });
+    const chassisExists = await Vehicle.findOne({
+      chassis: params.chassis,
+    });
+
+    if (plateExists) {
+      return res
+        .status(400)
+        .json({ error: "Vehicle with this plate already exists." });
+    }
+    if (chassisExists) {
+      return res
+        .status(400)
+        .json({ error: "Vehicle with this chassis already exists." });
+    }
+
+    const vehicle = await Vehicle.create(params);
+    return res.json(vehicle);
   }
 
   public async update(req: Request, res: Response) {

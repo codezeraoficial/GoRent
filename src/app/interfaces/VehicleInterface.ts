@@ -4,4 +4,5 @@ export interface VehicleInterface{ licensePalte: String,
   model: String,
   brand: String,
   year: String,
+  licensePlate: String,
 }
