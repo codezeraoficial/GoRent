@@ -66,7 +66,33 @@ export class VehicleController {
     const vehicle = await Vehicle.findById({ _id: vehicleId });
 
     if (!vehicle)
-      return res.status(204).json({ error: "Vehicle was not found." });
+      return res.status(400).json({ error: "Vehicle was not found." });
+
+      const plateExists = await Vehicle.findOne({
+        licensePlate: params.licensePlate,
+      });
+      const chassisExists = await Vehicle.findOne({
+        chassis: params.chassis,
+      });
+      const renavamExists = await Vehicle.findOne({
+        renavam: params.renavam,
+      });
+  
+      if (plateExists) {
+        return res
+          .status(400)
+          .json({ error: "Vehicle with this plate already exists." });
+      }
+      if (chassisExists) {
+        return res
+          .status(400)
+          .json({ error: "Vehicle with this chassis already exists." });
+      }
+      if (renavamExists) {
+        return res
+          .status(400)
+          .json({ error: "Vehicle with this renavam already exists." });
+      }
 
     try {
       const vehicle = await Vehicle.findByIdAndUpdate(vehicleId, params, {
