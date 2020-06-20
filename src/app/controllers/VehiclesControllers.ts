@@ -110,9 +110,15 @@ export class VehicleController {
     const vehicleId = req.params._id;
     if (!vehicleId)
       return res.status(400).json({ error: "Id must be provided." });
+
+      const vehicle = await Vehicle.findById({ _id: vehicleId });
+
+      if (!vehicle)
+        return res.status(400).json({ error: "Vehicle was not found." });
+    
     try {
-      await Vehicle.findByIdAndRemove(vehicleId);
-      return res.status(200).json({ messge: "Vehicle  removed successfully." });
+      await Vehicle.remove(vehicle);
+      return res.status(200).json({ message: "Vehicle  removed successfully." });
     } catch (error) {
       return res.status(500).json(error);
     }
