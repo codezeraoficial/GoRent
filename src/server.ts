@@ -1,9 +1,7 @@
 import app from './app';
 import * as mongoose from 'mongoose';
+import {connect} from './database/mongoose';
 
-mongoose.connect('mongodb+srv://infosistemas:Brasil@123@cluster0-84qfi.mongodb.net/<infosistemas>?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+connect();
 
 app.listen(3333);
