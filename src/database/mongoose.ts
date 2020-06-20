@@ -1,8 +1,7 @@
 import * as mongoose from "mongoose";
 import { Mockgoose } from "mockgoose";
 
-const DB_URI =
-  "mongodb+srv://infosistemas:Brasil@123@cluster0-84qfi.mongodb.net/<infosistemas>?retryWrites=true&w=majority";
+const DB_URI = process.env.MONGO_URL;  
 
 export function connect() {
   return new Promise((resolve, reject) => {
