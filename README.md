@@ -139,11 +139,18 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by removing a unique vehicle specified by id
 
-## TEST
+## :telescope: Units tests
 
-<h1 align="center">
-    <img alt="Example" title="Example" src="https://media.giphy.com/media/idv3kRilTGWT2tfUxe/giphy.gif" />
-</h1>
+- If you are a developer, when cloning the project you will find a folder in the project called "test".
+This folder contains unit tests to simulate a user's interactions with the API.
+These tests include a vehicle CRUD.
+
+## Deploy
+
+
+- In this [link][gorent] you will have access to the same functionalities of the application without having to clone the project and install its dependencies.
+All you need to do is change the url for this one.
+- This application was published on Heroku
 
 #### If you performed each step, the possibility of working perfectly is 100%. If everything went well, you were able to interact with api, that means everything went well.
 
@@ -155,3 +162,4 @@ Thanks! :metal:
 [vs]: https://code.visualstudio.com/
 [mongodb]: https://www.mongodb.com/cloud/atlas/
 [insomnia]: https://insomnia.rest/
+[gorent]: https://go-rent.herokuapp.com/vehicles
