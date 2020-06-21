@@ -31,8 +31,8 @@
 
 ## :gear: APIREST
 
-Esta aplicação tem como objetivo de fornercer dados de um serviço de locadora de veículos. Utilizando a stack node como APIREST provendo performance 
-no carregamento de dados e flexibilidade no acesso.
+This application aims to provide data from a car rental service. Using the stack node as APIREST providing performance
+data loading and flexibility in access.
 
 <h1 align="center">
     <img alt="Example" title="Example" src="https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/rest-api-code-main.png" width="600px" />
@@ -85,13 +85,13 @@ running on port 3333
 Port: http://localhost:3333/
 
 
-###INDEX
+##INDEX
     - we will list all available vehicles 
     - Create a request of type GET, paste the url of the port concatenating with "vehicles". Staying like this: http://localhost:3333/vehicles
     - Click send and watch that
     - This should work by bringing all vehicles (if exists of course)
 
-###STORE
+##STORE
     - Now We will now create a new vehicle.
     - Create a POST request paste the url of the port concatenating with "vehicles". http://localhost:3333/vehicles
 
@@ -107,7 +107,7 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by creating a new vehicle
 
-###SHOW
+##SHOW
     - This time we will list a single vehicle specified by id
     - Create a request of type GET, paste the url of the port concatenating with "vehicles/id" . Staying like this: http://localhost:3333/vehicles/5eee846796f4c70e586ab5a6
     - Click send and watch that
@@ -129,7 +129,7 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by updating a vehicle
 
-###UPDATE
+##DESTROY
 5 - In this last step we will remove a single vehicle specified by id
 
     - Create a request of type DELETE, paste the url of the port concatenating with "vehicles" . 
@@ -147,5 +147,5 @@ Thanks! :metal:
 [typescript]: https://www.typescriptlang.org/
 [yarn]: https://yarnpkg.com/
 [vs]: https://code.visualstudio.com/
-[mongodb] :https://www.mongodb.com/cloud/atlas
+[mongodb]: https://www.mongodb.com/cloud/atlas/
 [insomnia]: https://insomnia.rest/
