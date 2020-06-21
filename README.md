@@ -91,7 +91,7 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by bringing all vehicles (if exists of course)
 
-##STORE
+### STORE
     - Now We will now create a new vehicle.
     - Create a POST request paste the url of the port concatenating with "vehicles". http://localhost:3333/vehicles
 
@@ -107,13 +107,13 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by creating a new vehicle
 
-##SHOW
+### SHOW
     - This time we will list a single vehicle specified by id
     - Create a request of type GET, paste the url of the port concatenating with "vehicles/id" . Staying like this: http://localhost:3333/vehicles/5eee846796f4c70e586ab5a6
     - Click send and watch that
     - This should work by bringing a unique specified vehicle
 
-###UPDATE
+### UPDATE
     - Here we will now update a vehicle.
     - Create a PUT request paste the url of the port concatenating with "vehicles" and fllowind id. Staying like this: http://localhost:3333/vehicles/5eee846796f4c70e586ab5a6
     - Change the desired data
@@ -129,7 +129,8 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by updating a vehicle
 
-##DESTROY
+### DESTROY
+
 5 - In this last step we will remove a single vehicle specified by id
 
     - Create a request of type DELETE, paste the url of the port concatenating with "vehicles" . 
@@ -139,7 +140,7 @@ Port: http://localhost:3333/
     - This should work by removing a unique vehicle specified by id
 
 
-### If you performed each step, the possibility of working perfectly is 100%. If everything went well, you were able to interact with api, that means everything went well.
+#### If you performed each step, the possibility of working perfectly is 100%. If everything went well, you were able to interact with api, that means everything went well.
 
 Thanks! :metal:
 
