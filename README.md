@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center"> 
-	 NextLevelWeek 1.0 APIRestful 🚀 Done! 
+	 GoRent APIREST 🚀 Done! 
 </h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/codezeraoficial/GoRent?color=%2304D361">
