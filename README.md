@@ -1,27 +1,27 @@
 
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="250px" />
+    <img alt="NodeJs" title="#NodeJs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="250px" />
 </h1>
 
 <h4 align="center"> 
-	 GoRent APIREST 🚀 Done! 
+	 GoRentServer 🚀 Done! 
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/codezeraoficial/GoRent?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/codezeraoficial/GoRentServer?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/codezeraoficial/GoRent">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/codezeraoficial/GoRentServer">
 	
   <a href="https://www.linkedin.com/in/leonardo-rviana/">
     <img alt="Made by LeonardoViana" src="https://img.shields.io/badge/made%20by-LeonardoViana-%2304D361">
   </a>
 
-  <a href="https://github.com/codezeraoficial/GoRent/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codezeraoficial/GoRent">
+  <a href="https://github.com/codezeraoficial/GoRentServer/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codezeraoficial/GoRentServer">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/codezeraoficial/GoRent/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/codezeraoficial/GoRent?style=social">
+   <a href="https://github.com/codezeraoficial/GoRentServer/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/codezeraoficial/GoRentServer?style=social">
   </a>
 </p>
 
@@ -63,7 +63,7 @@ From your command line:
 $ cd infosistemas
 
 # Clone this repository
-$ git clone https://github.com/codezeraoficial/GoRent.git
+$ git clone https://github.com/codezeraoficial/GoRentServer.git
 
 # Go into the repository
 $ cd infosistemas/server
@@ -94,8 +94,10 @@ Port: http://localhost:3333/
 ### STORE
     - Now We will now create a new vehicle.
     - Create a POST request paste the url of the port concatenating with "vehicles". http://localhost:3333/vehicles
+    - The image must be one from the existing web, but not required
 
      {
+      "imageUrl": "",
       "licensePlate": "PCY-6780",
       "chassis": "9dfddfd8f98d98fd98f",
       "renavam": "1235334545885",
@@ -117,12 +119,14 @@ Port: http://localhost:3333/
     - Here we will now update a vehicle.
     - Create a PUT request paste the url of the port concatenating with "vehicles" and fllowind id. Staying like this: http://localhost:3333/vehicles/5eee846796f4c70e586ab5a6
     - Change the desired data
-     {
-      "licensePlate": "PCY-6780",
-      "chassis": "9dfddfd8f98d98fd98f",
-      "renavam": "1235334545885",
-      "model": "Iron 883",
-      "brand": "Harley Davidson",
+    - The image must be one from the existing web, but not required
+    {
+      "imageUrl": "",
+      "licensePlate": "GHT-4556",
+      "chassis": "9dfdvdfbdcdcd",
+      "renavam": "16777566565",
+      "model": "Cruze",
+      "brand": "Chevrolet",
       "year": "2020"	
     }
 
@@ -148,7 +152,7 @@ These tests include a vehicle CRUD.
 ## Deploy
 
 
-- In this [link][gorent] you will have access to the same functionalities of the application without having to clone the project and install its dependencies.
+- In this [link][gorentserver] you will have access to the same functionalities of the application without having to clone the project and install its dependencies.
 All you need to do is change the url for this one.
 - This application was published on Heroku
 
@@ -162,4 +166,4 @@ Thanks! :metal:
 [vs]: https://code.visualstudio.com/
 [mongodb]: https://www.mongodb.com/cloud/atlas/
 [insomnia]: https://insomnia.rest/
-[gorent]: https://go-rent.herokuapp.com/vehicles
+[gorentserver]: https://go-rent.herokuapp.com/vehicles
