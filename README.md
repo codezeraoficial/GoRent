@@ -85,7 +85,7 @@ running on port 3333
 Port: http://localhost:3333/
 
 
-##INDEX
+### INDEX
     - we will list all available vehicles 
     - Create a request of type GET, paste the url of the port concatenating with "vehicles". Staying like this: http://localhost:3333/vehicles
     - Click send and watch that
@@ -139,6 +139,11 @@ Port: http://localhost:3333/
     - Click send and watch that
     - This should work by removing a unique vehicle specified by id
 
+## TEST
+
+<h1 align="center">
+    <img alt="Example" title="Example" src="https://media.giphy.com/media/idv3kRilTGWT2tfUxe/giphy.gif" />
+</h1>
 
 #### If you performed each step, the possibility of working perfectly is 100%. If everything went well, you were able to interact with api, that means everything went well.
 
