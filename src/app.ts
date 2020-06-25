@@ -19,9 +19,6 @@ class App {
     this.app.use(bodyParser.urlencoded({extended: false}));
   }
 
-  middlewares(){
-  }
-
 }
 
 export default new App().app;
